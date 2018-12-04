@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/index.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="head">
+            <span class="active">未使用</span>
+            <span>已使用</span>
+            <span>已过期</span>
+        </header>
+        <section>
+            <ul class="list">
+                <li>
+                    <div class="top">
+                        <span>￥<b class="money">5</b></span><span>满减券</span>
+                    </div>
+                    <div class="bottom">
+                        <p class="active">使用门槛：1.满100元即可使用；2.本券使用与所有项目</p>
+                        <p>使用时间：即日起至2016年11月10日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top" style="background:#5686F4 ">
+                        <span>￥<b>9.5</b></span><span>满减券</span>
+                    </div>
+                    <div class="bottom">
+                        <p class="active">使用门槛：1.满100元即可使用；2.本券使用与所有项目</p>
+                        <p>使用时间：即日起至2016年11月10日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top" style="background:#965DF5 ">
+                        <span>￥<b class="money">10</b></span><span>满减券</span>
+                    </div>
+                    <div class="bottom">
+                        <p class="active">使用门槛：1.满100元即可使用；2.本券使用与所有项目</p>
+                        <p>使用时间：即日起至2016年11月10日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top" style="background:#4BC670 ">
+                        <span>￥<b>10</b></span><span>满减券</span>
+                    </div>
+                    <div class="bottom">
+                        <p class="active">使用门槛：1.满100元即可使用；2.本券使用与所有项目</p>
+                        <p>使用时间：即日起至2016年11月10日</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+<script>
+    $('.head').on('click', 'span', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+
+</html>
